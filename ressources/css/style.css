@@ -1,0 +1,104 @@
+/* DOCUMENT INFORMATION 
+    - Document vitrail thème
+    - version : 1.0.0
+    - author : cecile
+*/
+
+/* COLORS
+    - DEFAULT BODY TEXT #000
+    - h1
+    - h2
+    - h3
+
+    - buttons
+    - buttons:hover
+
+    - icon                  #055705
+
+    - border
+
+*/
+
+/* FONTS
+    - default Lato
+    - subtitle
+
+*/
+
+/* CSS DIRECTORY
+    1. =GLOBAL
+    2. =HEADER
+    3. =PRODUITS
+
+*/
+
+.presentationTxt{
+    background-color: rgba(0,0,0,0.3);
+    color: aliceblue;
+    position: absolute;
+    top: 300px;
+    width: 100%;
+}
+
+.header-unit{
+    
+    top:0%;
+    left:0%;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+    position:fixed;
+    text-align: center;
+    background-size: cover;
+}
+video {
+    position: absolute;
+    z-index: -1;
+        
+
+    }
+video.fillWidth {
+    
+    min-width: 100vw;
+    min-height: 100vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#video-container {
+    top:0%;
+    left:0%;
+    height:100vh;
+    width:100%;
+    overflow: hidden;
+    background-size:cover;
+    overflow: hidden;
+} 
+
+/* GALERY
+====================================== */
+
+#sec{
+    position: absolute;
+    top: 100vh;
+    background-color: black;
+    color: aliceblue;
+    height: 100vh;
+    width: 100%;
+    padding: 30px;
+}
+
+.containerGal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imgGal{
+    width: 27%;
+}
+
+.imgGal img{
+    max-width: 100%;
+}
+
