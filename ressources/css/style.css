@@ -70,7 +70,6 @@ video.fillWidth {
     left:0%;
     height:100vh;
     width:100%;
-    overflow: hidden;
     background-size:cover;
     overflow: hidden;
 } 
@@ -81,17 +80,20 @@ video.fillWidth {
 #sec{
     position: absolute;
     top: 100vh;
+    left: 0px;
     background-color: black;
     color: aliceblue;
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
+    width: 96.9%;
     padding: 30px;
+    margin-left: 0px;
 }
 
 .containerGal {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
 
 .imgGal{
