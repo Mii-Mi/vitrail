@@ -20,8 +20,8 @@
 */
 
 /* FONTS
-    - default Lato
-    - subtitle
+    - default FaunaOne
+    - title PlayFairDisplay
 
 */
 
@@ -32,12 +32,56 @@
 
 */
 
+/* GLOBAL
+=================================== */
+
+@font-face{
+    font-family: "playfairdisplay";
+    src: url(../Fonts/playfairdisplay/PlayfairDisplay-Regular.ttf) format("truetype");
+}
+
+@font-face{
+    font-family: "faunaone";
+    src: url(../Fonts/faunaone/FaunaOne-Regular.ttf) format("truetype");
+}
+
+
+
+div, p {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "playfairdisplay", serif;
+}
+
+h1{
+    font-size: 4em;
+}
+
+p {
+    font-family: "faunaone", serif;
+    margin: 5px 0;
+}
+
+img{
+    margin: 5px 0;
+}
+
+/* HEADER
+=================================== */
+
 .presentationTxt{
-    background-color: rgba(0,0,0,0.3);
     color: aliceblue;
     position: absolute;
     top: 300px;
     width: 100%;
+    padding-top:50px;
+    padding-bottom: 60px;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.3);
 }
 
 .header-unit{
@@ -50,13 +94,12 @@
     position:fixed;
     text-align: center;
     background-size: cover;
+
 }
 video {
     position: absolute;
     z-index: -1;
-        
-
-    }
+}
 video.fillWidth {
     
     min-width: 100vw;
@@ -72,9 +115,19 @@ video.fillWidth {
     width:100%;
     background-size:cover;
     overflow: hidden;
-} 
+}
+.scrollClk{
+    position: relative;
+    top: -25px;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+}
+.scrollClk a{
+    text-decoration: none;
+    color: #fff;
+}
 
-/* GALERY
+/* SECTION MENU PANEL
 ====================================== */
 
 #sec{
@@ -83,16 +136,23 @@ video.fillWidth {
     left: 0px;
     background-color: black;
     color: aliceblue;
-    min-height: 100vh;
+    height: 100vh;
     width: 96.9%;
     padding: 30px;
     margin-left: 0px;
+    overflow: hidden;
+}
+
+.secIntro{
+    margin: 30px 0;
 }
 
 .containerGal {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    height: 80%;
+    align-items: center;
     
 }
 
@@ -100,7 +160,43 @@ video.fillWidth {
     width: 27%;
 }
 
+.imgGal1{
+    align-self: flex-start;
+}
+
+.imgGal3{
+    align-self: flex-end;
+}
+
 .imgGal img{
     max-width: 100%;
+}
+.scrollClk2{
+    position: relative;
+    top: 35px;
+    left: -30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+    width: 100vw;
+}
+.scrollClk2 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* SECTION FABRICATION
+=================================== */
+
+#sec2{
+    position: absolute;
+    top: 200vh;
+    left: 0px;
+    height: 100vh;
+    width: 96.9%;
+    padding: 30px;
+    margin-left: 0px;
+    overflow: hidden;
+    background-color: #fff;
 }
 
