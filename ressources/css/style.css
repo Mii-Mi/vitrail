@@ -132,7 +132,7 @@ video.fillWidth {
 
 #sec{
     position: absolute;
-    top: 110vh;
+    top: 109vh;
     left: 0px;
     background-color: black;
     color: aliceblue;
@@ -192,12 +192,28 @@ video.fillWidth {
     position: absolute;
     top: 220vh;
     left: 0px;
-    height: 100vh;
     width: 96.9%;
     padding: 30px;
     margin-left: 0px;
-    overflow: hidden;
-    background-color: rgb(233, 200, 162)
+    background-color: rgb(233, 200, 162);
+    height: 500em;
+}
+#sec2 h2{
+    padding: 1.5em 0;
+    text-align: center;
+    font-size: 3em;
+}
+.titleFab1{
+    background: url("../images/6-1200-1070x450_c.jpg") no-repeat;
+    background-size: cover;
+    background-position: center -220px;
+}
+.show{
+    max-width: 600px;
+    min-height: 400px;
+}
+.show img{
+    min-height: 400 px;
 }
 
 #sec2 img{
@@ -205,13 +221,4 @@ video.fillWidth {
     max-width: 27%;
 }
 
-#sec2 p{
-    max-width: 27%;
-}
-
-.fabGal1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
