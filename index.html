@@ -4,14 +4,14 @@
         <title>Le Vitrail</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="ressources/css/style.css" />
-        <link rel="stylesheet" href="../css3-animate-it-master/css/animations.css" />
+        <link rel="stylesheet" href="ressources/jquery/css3-animate-it-master/css/animations.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-           <!-- icons -->
+            <!-- icons -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         </head>
 <body>
-    <header>
+    <header class="panel">
         <div class="header-unit animatedParent" >
             <div class="presentationTxt animatedParent">
                 <h1 class="animated bounceInLeft delay-4000">Le Vitrail</h1>
@@ -26,10 +26,10 @@
                         <embed src="http://www.youtube.com/v/_etwz7NkemE&hl=fr" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></embed>
                 <![endif]-->
             </div>
-            <p class="scrollClk animated shakeUp delay-6000" ><i class="fas fa-angle-double-down"></i> <a href="#sec">Scroll</a> <i class="fas fa-angle-double-down"></i></p>
+            <p class="scrollClk animated shakeUp delay-6000" ><i class="fas fa-angle-double-down"></i> <a href="#sec" class="scroll">Scroll</a> <i class="fas fa-angle-double-down"></i></p>
         </div>
     </header>
-    <section id="sec" class="animatedParent">
+    <section id="sec" class="panel animatedParent">
         <p class="secIntro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum earum cumque nobis temporibus, commodi quam possimus totam, dolorum fugiat debitis saepe harum, inventore corrupti! Autem est quasi eum assumenda magnam!</p>
         <div class="containerGal animatedParent">
             <div class="imgGal imgGal1 animated bounceInUp">
@@ -48,15 +48,54 @@
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
-        <p class="scrollClk2 animated shakeUp delay-2000" ><i class="fas fa-angle-double-down"></i> <a href="#sec2">Scroll</a> <i class="fas fa-angle-double-down"></i></p>
+        <p class="scrollClk2 animated shakeUp delay-2000" ><i class="fas fa-angle-double-down"></i> <a href="#sec2" class="scroll">Scroll</a> <i class="fas fa-angle-double-down"></i></p>
     </section>
-    <section id="sec2">
-        <div class="fabGal">
-
+    <section id="sec2" class="panel">
+        <div class="fabGal1">
+            <div class="fabImg">
+                <img src="ressources/images/Verronimo-fabrication-vitrail-Tiffany-etape-gabarits-768x576.jpg" alt="img tracé" />
+                <img src="ressources/images/Verronimo-fabrication-vitrail-Tiffany-detourage-gabarit-768x500.jpg" alt="img tracé2" />
+                <img src="ressources/images/PICT5231.jpg" alt="img plaques verre" />
+                <img src="ressources/images/2013-04-30_17.14.23.jpg" alt="img coupe début" />
+                <img src="ressources/images/PICT0066.jpg" alt="img découpe trusquin" />
+                <img src="ressources/images/6-1200-1070x450_c.jpg" alt="img découpe" />
+                <img src="ressources/images/stage-amateur-verres-decoupes-detail.jpg" alt="img découpe" />
+                <img src="ressources/images/2013-05-01_01.50.09.jpg" alt="img découpe finie" />
+                <img src="ressources/images/proxy.duckduckgo.com.jpg" alt="img peinture" />
+                <img src="ressources/images/restauration-vitrail-035-e1496065239219-600x450.jpg" alt="img peinture" />
+                <img src="ressources/images/montage.jpg" alt="img montage" />
+                <img src="ressources/images/1441200548.jpg" alt="img montage" />
+                <img src="ressources/images/233_verrier-vitraux-vitrail-isere-creation-restauration-grenoble1-640x480.jpg" alt="img soudage"/>
+                <img src="ressources/images/vitraux-église-de-Viellenave-sur-Bidouze-en-cours-de-restauration.jpg" alt="img soudage">
+                <img src="ressources/images/04_4.jpg" alt="img barlotières" />
+            </div>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="../css3-animate-it-master/js/css3-animate-it.js"></script>
+    
+    <!-- jquery -->
+    <script  src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
+    <!-- css3-animate-it -->
+    <script src="ressources/jquery/css3-animate-it-master/js/css3-animate-it.js"></script>
+
+        
+    <!-- scrollify -->
+    <script src="ressources/jquery/Scrollify-master/jquery.scrollify.js"></script>
+    
+    <script>
+        $(function() {
+            $.scrollify({
+                section : ".panel",
+            });
+            $('.scroll').click(function(){
+                $.scrollify.next();
+            });
+        });
+    </script>
+
+        <!-- /scrollify -->
+
+    
+    
 </body>
 </html>
