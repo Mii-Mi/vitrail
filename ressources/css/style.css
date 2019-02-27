@@ -45,7 +45,9 @@
     src: url(../Fonts/faunaone/FaunaOne-Regular.ttf) format("truetype");
 }
 
-
+body{
+    overflow-x: hidden;
+}
 
 div, p {
     padding: 0;
@@ -74,9 +76,6 @@ img{
 /* HEADER
 =================================== */
 
-.nav-collapse{
-    width: 18em;
-}
 .presentationTxt{
     color: aliceblue;
     position: absolute;
@@ -133,15 +132,19 @@ video.fillWidth {
 
 /* SECTION MENU PANEL
 ====================================== */
-
-#sec{
+.cont{
     position: absolute;
     top: 108vh;
     left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#sec{
+    
     background-color: black;
     color: aliceblue;
     height: 100vh;
-    width: 96.9%;
     padding: 30px;
     margin-left: 0px;
     overflow: hidden;
@@ -200,17 +203,11 @@ video.fillWidth {
 =================================== */
 
 #sec2, #sec3, #sec4{
-    width: 96.9%;
     padding: 30px;
     margin-left: 0px;
     background-color: rgb(233, 200, 162);
     height: 100vh;
     overflow: hidden;
-}
-#sec2{
-    position: absolute;
-    top: 220vh;
-    left: 0px;
 }
 #sec2 h2, #sec3 h2, #sec4 h2{
     padding: 1.5em 0;
@@ -256,7 +253,7 @@ video.fillWidth {
 }
 .scrollClk3{
     position: relative;
-    top: 111px;
+    top: 107px;
     left: -30px;
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
@@ -271,11 +268,6 @@ video.fillWidth {
 /* SECTION ASSEMBLAGE
 =================================== */
 
-#sec3{
-    position: absolute;
-    top: 320vh;
-    left: 0px;
-}
 #sec3 h2{
     color: #fff;
     text-shadow: 5px 5px 5px black;
@@ -289,11 +281,6 @@ video.fillWidth {
 /* SECTION CHANTIER
 =================================== */
 
-#sec4{
-    position: absolute;
-    top: 420vh;
-    left: 0px;
-}
 #sec4 h2{
     color: #fff;
     text-shadow: 5px 5px 5px black;
@@ -302,4 +289,39 @@ video.fillWidth {
     background: url("../images/Pose-cerbère7.jpg") no-repeat;
     background-size: cover;
     background-position: center -130px;
+}
+
+@media all and (max-width: 1024px)
+{
+    
+    p{
+        color: red;
+    }
+    .header-unit{
+        overflow: hidden;
+    }
+    #video-container{
+        max-width: 100%;
+        overflow: hidden;
+        margin: auto;
+    }
+    .contShow{
+        display: flex;
+        flex-direction: column;
+    }
+    .titleFab{
+        font-size: 15em;
+    }
+    #sec, #sec2, #sec3, #sec4{
+        height: 100%;
+        overflow: visible;
+    }
+    .show{
+        margin: auto;
+        max-width: 90%;
+        height: 100%;    
+    }
+    .comShow{
+        margin: auto;
+    }
 }
