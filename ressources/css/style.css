@@ -142,7 +142,7 @@ video.fillWidth {
 }
 #sec{
     
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
     color: aliceblue;
     height: 100vh;
     padding: 30px;
@@ -189,7 +189,7 @@ video.fillWidth {
     position: relative;
     top: 35px;
     left: -30px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgb(53, 53, 53);
     color: #fff;
     text-align: center;
     width: 100vw;
@@ -228,6 +228,7 @@ video.fillWidth {
 }
 .introFab{
     margin: 3em 2em;
+    font-size: 1.2em;
 }
 .contShow{
     display: flex;
@@ -244,6 +245,8 @@ video.fillWidth {
 .comShow{
     padding: 15px;
     margin: 3em 2em;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
 }
 .comShow h3, p{
     text-align: center;
@@ -253,7 +256,7 @@ video.fillWidth {
 }
 .scrollClk3{
     position: relative;
-    top: 107px;
+    top: 111px;
     left: -30px;
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
@@ -291,12 +294,40 @@ video.fillWidth {
     background-position: center -130px;
 }
 
+/* FOOTER
+=================================== */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    padding: 1.65em 3em;
+    width: 96%;
+    position: absolute;
+    left: 0px;
+    perspective: 800px;
+}
+footer a{
+    color: #000;
+}
+footer .logo{
+    opacity: 0.5;
+    position: relative;
+    bottom: 10px;
+    transition: 1s;
+}
+footer .logo:hover{
+    transform: rotateY(360deg);
+    transition: 1s;
+}
+
+/* RESPONSIVE
+=================================== */
+
 @media all and (max-width: 1024px)
 {
     
-    p{
-        color: red;
-    }
     .header-unit{
         overflow: hidden;
     }
@@ -309,8 +340,11 @@ video.fillWidth {
         display: flex;
         flex-direction: column;
     }
-    .titleFab{
-        font-size: 15em;
+    #sec2 h2, #sec3 h2, #sec4 h2{
+        font-size: 30px;
+        background: url("../images/6-1200-1070x450_c.jpg") no-repeat;
+        background-size: cover;
+        padding: 1em 0;
     }
     #sec, #sec2, #sec3, #sec4{
         height: 100%;
@@ -324,4 +358,20 @@ video.fillWidth {
     .comShow{
         margin: auto;
     }
+    .scrollClk, .scrollClk2, .scrollClk3{
+        display: none;
+    }
+    footer{
+        width: 100%;
+    }
+    .logo{
+        display: none;
+    }
+    footer p{
+        margin: auto;
+    }
+    footer a{
+        margin: auto;
+    }
+    
 }
