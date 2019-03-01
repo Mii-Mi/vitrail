@@ -187,9 +187,9 @@ video.fillWidth {
     transition-duration: 3s;
 }
 .scrollClk2{
-    position: relative;
+    /*position: relative;
     top: 35px;
-    left: -30px;
+    left: -30px;*/
     background-color: rgb(53, 53, 53);
     color: #fff;
     text-align: center;
@@ -300,7 +300,6 @@ video.fillWidth {
 
 #sec4 {
     padding-bottom: 0;
-    max-height: 3200px;
 }
 #sec4 h2{
     color: #fff;
