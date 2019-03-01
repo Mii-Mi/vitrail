@@ -79,7 +79,7 @@ img{
 .presentationTxt{
     color: aliceblue;
     position: absolute;
-    top: 300px;
+    top: 350px;
     width: 100%;
     padding-top:50px;
     padding-bottom: 100px;
@@ -133,6 +133,7 @@ video.fillWidth {
 /* SECTION MENU PANEL
 ====================================== */
 .cont{
+    background-color: rgb(233, 200, 162);
     position: absolute;
     top: 108vh;
     left: 0px;
@@ -205,9 +206,9 @@ video.fillWidth {
 #sec2, #sec3, #sec4{
     padding: 30px;
     margin-left: 0px;
-    background-color: rgb(233, 200, 162);
     height: 100vh;
     overflow: hidden;
+    margin-bottom: 2.5em;
 }
 #sec2 h2, #sec3 h2, #sec4 h2{
     padding: 1.5em 0;
@@ -221,18 +222,29 @@ video.fillWidth {
     max-height: 500px;
     max-width: 27%;
 }
+.contSec{
+    position: relative;
+    top: -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0;
+    padding-bottom: 0;
+}
 .titleFab{
     background: url("../images/6-1200-1070x450_c.jpg") no-repeat;
     background-size: cover;
     background-position: center -220px;
 }
 .introFab{
-    margin: 3em 2em;
+    margin: auto;
     font-size: 1.2em;
 }
 .contShow{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .contShow .show .comShow{
     margin: auto;
@@ -246,7 +258,6 @@ video.fillWidth {
     padding: 15px;
     margin: 3em 2em;
     background-color: rgba(0, 0, 0, 0.3);
-    height: 100%;
 }
 .comShow h3, p{
     text-align: center;
@@ -255,13 +266,16 @@ video.fillWidth {
     min-height: 400 px;
 }
 .scrollClk3{
-    position: relative;
-    top: 111px;
-    left: -30px;
+    /*position: relative;
+    bottom: -12vh;
+    left: -31px;*/
+    align-self: flex-start;
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     text-align: center;
-    width: 100vw;    
+    width: 105%;
+    margin-left: -31px;
+    margin-bottom: 0;
 }
 .scrollClk3 a{
     text-decoration: none;
@@ -284,6 +298,10 @@ video.fillWidth {
 /* SECTION CHANTIER
 =================================== */
 
+#sec4 {
+    padding-bottom: 0;
+    max-height: 3200px;
+}
 #sec4 h2{
     color: #fff;
     text-shadow: 5px 5px 5px black;
@@ -304,9 +322,11 @@ footer{
     background-size: cover;
     padding: 1.65em 3em;
     width: 96%;
-    position: absolute;
-    left: 0px;
-    perspective: 800px;
+    max-height: 60px;
+    /*position: absolute;
+    left: 0px;*/
+    /*perspective: 800px;*/
+    margin-top: 1px;
 }
 footer a{
     color: #000;
@@ -348,7 +368,7 @@ footer .logo:hover{
     }
     #sec, #sec2, #sec3, #sec4{
         height: 100%;
-        overflow: visible;
+        overflow: hidden;
     }
     .show{
         margin: auto;
